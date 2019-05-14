@@ -1,3 +1,5 @@
+import java.io.File;
+
 public class KnightsTemplarBank {
 
     /**
@@ -9,6 +11,10 @@ public class KnightsTemplarBank {
      */
     public int[] resolve(int amount, int[] options) {
         return null;
+    }
+
+    public static void main(String[] args) {
+
     }
 
 }

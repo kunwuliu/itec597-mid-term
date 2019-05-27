@@ -27,7 +27,7 @@ public class KnightsTemplarBank {
 //            System.out.println(n[amount]);
             result[0] = n[amount];
             for (int i = 1; i <= amount; i++) {
-                int cost = Integer.MAX_VALUE;
+                int cost = amount;
                 for (int j = 0; j < options.length; j++) {
                     if (i - options[j] >= 0) {
                         cost = min(f[i-options[j]] + 1, cost);
@@ -56,8 +56,8 @@ public class KnightsTemplarBank {
 
         KnightsTemplarBank bank = new KnightsTemplarBank();
         //int amount = 10000;
-        int amount = 5;
-        int[] options = {1, 2, 5, 10, 25};
+        int amount = 6249;
+        int[] options = {186, 419, 83, 408};
         System.out.println(Arrays.toString(bank.resolve(amount, options)));
 
 //        System.out.println((System.currentTimeMillis()-a)/1000f+ "秒");
